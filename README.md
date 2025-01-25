@@ -19,7 +19,7 @@ This repository contains the code for Team Delirium (4th place in Senior Categor
 
 Note that software documentation for the Smorphi robot can found in [WefaaRobotics' Github wiki](https://github.com/WefaaRobotics/Smorphi/wiki/Smorphi-Code-Documentation). The original template provided to all participants can be found [here](https://github.com/WefaaRobotics/RRZ_SG_25).
 
-If provided in future competitions, we do not recommend using the Smorphi fork of the Ardublockly locally-run block-based coding platform due to its utilisation of deprecated code — but in case anyone does, it may be important to note the following fixes within the source code itself.
+If provided in future competitions, we do not recommend using the Smorphi fork of the Ardublockly locally-run block-based coding platform due to its utilisation of deprecated code — but in case anyone does, we advise performing the following fixes, especially for more modern versions of Python.
 - Change all instances of `getargspec` to `getfullargspec`. Affected files are found in the `ardbublocklyserver/local-packages/bottle` directory.
 - Change all instances of `from collections import MutableMapping` to `from collections.abc import MutableMapping`. This throws an error for Python 3.8 and onwards. Affected files are found in the `ardublocklyserver/local-packages/configparser` directory.
 
